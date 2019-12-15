@@ -15,11 +15,12 @@ const updateUI = (data) => {
     }
 
 
-    //update night & day images & icons
+    //display weather icons
     const iconSrc = `static/img/icons/${weather.WeatherIcon}.svg`;
     console.log(iconSrc);
     icon.setAttribute('src', iconSrc);
 
+    //update night & day images
     let timeImg = weather.IsDayTime ? 'static/img/clouds.png' : 'static/img/moon.jpg';
    
     time.setAttribute('src', timeImg);
