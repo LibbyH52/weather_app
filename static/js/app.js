@@ -60,4 +60,4 @@ locationForm.addEventListener('submit', e => {
    updateLocation(city)
    .then(data => updateUI(data))
    .catch(err => console.log(err));
-})
+});
