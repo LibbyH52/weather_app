@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container my5 mx-auto">
+        <h1 class="text-muted text-center my-4">Ninja Weather</h1>
+
+        
+        <!--Form to allow user to enter their chosen location-->
+        <form class="change-location text-muted text-center my-4">
+            <label for="city">Enter your location: </label>
+            <input type="text" name="city" class="form-control p-4">
+        </form>
+
+        <!--Div to contain info about the weather in a specific location-->
+        <div class="card d-none lg-shadow rounded">
+
+            <!--Image of day or night to display. Images will be dynamically injected depending on time of day-->
+            <img src="" alt="" class="time card-img-top">
+
+            <!--Contains weather icon -cloud, raindrops, etc.-->
+            <div class="icon bg-light mx-auto text-center">
+                <img src="" alt="">
+            </div>
+            <div class="text-muted text-uppercase text-center details">
+                <!--Temperature and weather details go here-->
+                <h5 class="my-3">City name</h5>
+                <div class="my-3">Weather condition</div>
+                <div class="display-4 my-4">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--js files with forecasgt.js first because are calling functions from forecast.js in app.js-->
+    <script src="static/js/forecast.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
