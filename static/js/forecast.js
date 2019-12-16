@@ -1,4 +1,4 @@
-const apikey = 'wXjUBLYnAAAVlJ21hy4Go80N3NaWn7NA';
+const apikey = '49d1hrKt7KDVCXGPUTtbIHfHTYInu8NM';
 const city = document.querySelector('.changeLocation[input]');
 
 const getWeather = async(locationKey) => {
